@@ -1,206 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <title>aaa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- App favicon -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <!-- App css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/icons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="../style/theme-style.css" rel="stylesheet" type="text/css" />
+    <link href="../style/custom-style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-  <!-- App css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="../style/bootstrap.min.css">
-  <link rel="stylesheet" href="../style/icons.min.css">
-
-  <link href="../style/theme-style.css" rel="stylesheet" type="text/css" />
-
-</head>
-
-<body>
-
-<!-- Begin page -->
-<div id="wrapper">
-
-  <!-- Topbar Start -->
-  <div class="navbar-custom">
-    <ul class="list-unstyled topnav-menu float-right mb-0">
-
-      <li class="dropdown notification-list">
-        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-          <img src="../images/user-1.jpg" alt="user-image" class="rounded-circle">
-          <span class="pro-user-name ml-1">
-              Turkish Gypsy Girl <i class="mdi mdi-chevron-down"></i>
-          </span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right profile-dropdown">
-          <!-- item-->
-          <div class="dropdown-header noti-title">
-            <h6 class="text-overflow m-0">Welcome !</h6>
-          </div>
-
-          <!-- item-->
-          <a href="#" class="dropdown-item notify-item">
-            <i class="fe-user"></i>
-            <span>My Account</span>
-          </a>
-
-
-          <!-- item-->
-          <a href="#" class="dropdown-item notify-item">
-            <i class="fe-lock"></i>
-            <span>Lock Screen</span>
-          </a>
-
-          <div class="dropdown-divider"></div>
-
-          <!-- item-->
-          <a href="#" class="dropdown-item notify-item">
-            <i class="fe-log-out"></i>
-            <span>Logout</span>
-          </a>
-
-        </div>
-      </li>
-
-      <li class="dropdown notification-list">
-        <a href="#" class="nav-link right-bar-toggle waves-effect waves-light">
-          <i class="fe-power noti-icon"></i>
-        </a>
-      </li>
-    </ul>
-    <!-- LOGO -->
-    <div class="logo-box">
-      <a href="#" class="logo text-center">
-        <span class="logo-lg">
-            <img src="../images/TSP-logo@2x.png" alt="" >
-        </span>
-        <span class="logo-sm">
-            <img src="../images/TSY@2x.png" alt="">
-        </span>
-      </a>
-    </div>
-
-    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
-      <li>
-        <button class="button-menu-mobile waves-effect waves-light">
-          <i class="fe-menu"></i>
-        </button>
-      </li>
-    </ul>
-  </div>
-  <!-- end Topbar -->
-
-  <!-- ========== Left Sidebar Start ========== -->
-  <div class="left-side-menu">
-
-    <div class="slimscroll-menu">
-
-      <!--- Sidemenu -->
-      <div id="sidebar-menu">
-
-        <ul class="metismenu" id="side-menu">
-          <li>
-            <a href="javascript: void(0);">
-              <i class="fe-airplay"></i>
-              <span class="badge badge-success badge-pill float-right">4</span>
-              <span> Dashboards </span>
+  <body>
+    <!-- Begin page -->
+    <div id="wrapper">
+      <!-- Topbar Start -->
+      <div class="navbar-custom">
+        <ul class="list-unstyled topnav-menu float-right mb-0">
+          <li class="dropdown notification-list">
+            <a href="#" class="nav-link dropdown-toggle right-bar-toggle waves-effect waves-light" data-toggle="dropdown">
+              <i class="material-icons align-middle" style="width: 35px; color:#292D39;">
+                notification_important
+              </i>
             </a>
-            <ul class="nav-second-level" aria-expanded="false">
-              <li>
-                <a href="index.html">Dashboard 1</a>
-              </li>
-            </ul>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+              <!-- item-->
+              <div class="dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Notification !</h6>
+              </div>
+
+              <!-- item-->
+              <a href="#" class="dropdown-item notify-item">
+                <span>Recover your password</span>
+
+              </a>
+              <!-- item-->
+              <a href="#" class="dropdown-item notify-item">
+                <span>Change your password</span>
+              </a>
+            </div>
+
+            <span class="info-bell-icon">4</span>
           </li>
-
-
-          <li class="menu-title mt-2">Components</li>
-
-          <li>
-            <a href="javascript: void(0);">
-              <i class="fe-briefcase"></i>
-              <span> UI Elements </span>
-              <span class="menu-arrow"></span>
+          <li class="dropdown notification-list">
+            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+              <img src="../images/nav-user.png" alt="user-image" class="rounded-circle">
+              <span class="pro-user-name ml-1">
+                 <!-- Turkish Gypsy Girl-->
+              </span>
             </a>
-            <ul class="nav-second-level" aria-expanded="false">
-              <li>
-                <a href="ui-buttons.html">Buttons</a>
-              </li>
-              <li>
-                <a href="ui-cards.html">Cards</a>
-              </li>
-            </ul>
-          </li>
+            <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+              <!-- item-->
+              <div class="dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Welcome !</h6>
+              </div>
 
+              <!-- item-->
+              <a href="#" class="dropdown-item notify-item">
+                <i class="fe-user"></i>
+                <span>My Account</span>
+              </a>
+
+
+              <!-- item-->
+              <a href="#" class="dropdown-item notify-item">
+                <i class="fe-lock"></i>
+                <span>Lock Screen</span>
+              </a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- item-->
+              <a href="#" class="dropdown-item notify-item">
+                <i class="fe-log-out"></i>
+                <span>Logout</span>
+              </a>
+
+            </div>
+          </li>
         </ul>
-
+        <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+          <li>
+            <button class="button-menu-mobile waves-effect waves-light">
+              <i class="fe-menu"></i>
+            </button>
+          </li>
+        </ul>
       </div>
-      <!-- End Sidebar -->
+      <!-- end Topbar -->
 
-      <div class="clearfix"></div>
-
-    </div>
-    <!-- Sidebar -left -->
-
-  </div>
-  <!-- Left Sidebar End -->
-
-  <!-- ============================================================== -->
-  <!-- Start Page Content here -->
-  <!-- ============================================================== -->
-
-  <div class="content-page">
-    <div class="content">
-
-      <!-- Start Content-->
-      <div class="container-fluid">
-
-
-
-      </div> <!-- container -->
-
-    </div> <!-- content -->
-
-    <!-- Footer Start -->
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            2019 Dummy <a href="#">Farhan</a>
+      <!-- ========== Left Sidebar Start ========== -->
+      <div class="left-side-menu">
+        <div class="slimscroll-menu">
+          <!--- Sidemenu -->
+          <div id="sidebar-menu">
+            <ul class="metismenu" id="side-menu">
+              <li>
+                <!-- LOGO -->
+                <div class="logo-box">
+                  <a href="#" class="logo text-center">
+                  <span class="logo-lg">
+                      <img src="../images/theme-logo.png" alt="" >
+                  </span>
+                          <span class="logo-sm">
+                      <img src="../images/theme-logo.png" alt="">
+                  </span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="home%202.html">
+                  <i class="material-icons">
+                    dashboard
+                  </i>
+                  <span class="badge badge-success badge-pill float-right">4</span>
+                  <span> Home </span>
+                </a>
+              </li>
+              <li>
+                <a href="classes.html">
+                  <i class="material-icons">
+                    calendar_today
+                  </i>
+                  <span> Classes </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">
+                    person
+                  </i>
+                  <span> Students </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">
+                    person
+                  </i>
+                  <span> Students </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">
+                    how_to_reg
+                  </i>
+                  <span> Attendance </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">
+                    highlight
+                  </i>
+                  <span> Feedback </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">
+                    notification_important
+                  </i>
+                  <span> Notifications </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="material-icons">
+                    perm_data_setting
+                  </i>
+                  <span> Setting </span>
+                </a>
+              </li>
+            </ul>
+            <!--            Menu Icon -->
+            <ul class="menu-icon">
+              <li>
+                <button class="button-menu-mobile waves-effect waves-light">
+                  <i class="material-icons">
+                    menu
+                  </i>
+                </button>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-6">
-            <div class="text-md-right footer-links d-none d-sm-block">
-              <a href="#">About Us</a>
-              <a href="#">Help</a>
-              <a href="#">Contact Us</a>
+          <!-- End Sidebar -->
+          <div class="clearfix"></div>
+        </div>
+        <!-- Sidebar -left -->
+      </div>
+      <!-- Left Sidebar End -->
+      <!-- ============================================================== -->
+      <!-- Start Page Content here -->
+      <!-- ============================================================== -->
+      <div class="content-page">
+        <div class="content">
+          <!-- Start Content-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="top-heading">Hi, Marcus</h1>
+              </div>
+            </div>
+            <div class="mb-3 d-flex flex-wrap justify-content-lg-start justify-content-md-center justify-content-center">
+              <div class="total-card">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Total Classes</h3>
+                  <img src="../images/teacher@2x.png" alt="teacher-logo">
+                </div>
+                <span class="counter">8</span>
+              </div>
+              <div class="total-card">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Total Classes</h3>
+                  <img src="../images/teacher@2x.png" alt="teacher-logo">
+                </div>
+                <span class="counter">8</span>
+              </div>
+              <div class="total-card">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Total Classes</h3>
+                  <img src="../images/teacher@2x.png" alt="teacher-logo">
+                </div>
+                <span class="counter">8</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card-box">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="header-title mr-3">Upcoming Classes</h4>
+                      <div class="dropdown custom-dropdown">
+                        <a class="btn btn-light dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Today <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#"> Show All </a>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-sm detail-table mb-0">
+                      <thead>
+                      <tr>
+                        <th>Sem</th>
+                        <th>Subj. Code</th>
+                        <th>Subj. Name</th>
+                        <th>Start Time</th>
+                        <th>Duration</th>
+                        <th>Location</th>
+                        <th></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1st</td>
+                          <td>BIO12344</td>
+                          <td>Microbiology</td>
+                          <td>8:50 AM</td>
+                          <td>2h</td>
+                          <td>Block A</td>
+                          <td>
+                            <a href="#">
+                              <i class="material-icons">
+                                create
+                              </i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1st</td>
+                          <td>BIO12344</td>
+                          <td>Microbiology</td>
+                          <td>8:50 AM</td>
+                          <td>2h</td>
+                          <td>Block A</td>
+                          <td>
+                            <a href="#">
+                              <i class="material-icons">
+                                create
+                              </i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1st</td>
+                          <td>BIO12344</td>
+                          <td>Microbiology</td>
+                          <td>8:50 AM</td>
+                          <td>2h</td>
+                          <td>Block A</td>
+                          <td>
+                            <a href="#">
+                              <i class="material-icons">
+                                create
+                              </i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1st</td>
+                          <td>BIO12344</td>
+                          <td>Microbiology</td>
+                          <td>8:50 AM</td>
+                          <td>2h</td>
+                          <td>Block A</td>
+                          <td>
+                            <a href="#">
+                              <i class="material-icons">
+                                create
+                              </i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1st</td>
+                          <td>BIO12344</td>
+                          <td>Microbiology</td>
+                          <td>8:50 AM</td>
+                          <td>2h</td>
+                          <td>Block A</td>
+                          <td>
+                            <a href="#">
+                              <i class="material-icons">
+                                create
+                              </i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> <!-- end table-responsive-->
+
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-box">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="header-title mr-3">Recent Classes</h4>
+                      <div class="dropdown custom-dropdown">
+                        <a class="btn btn-light dropdown-toggle" href="#" id="recentClass" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Today <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="recentClass" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#"> Show All </a>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-sm detail-table mb-0">
+                      <thead>
+                      <tr>
+                        <th>Sem</th>
+                        <th>Subj. Code</th>
+                        <th>Subj. Name</th>
+                        <th>Start Time</th>
+                        <th>Duration</th>
+                        <th>Location</th>
+                        <th></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>1st</td>
+                        <td>BIO12344</td>
+                        <td>Microbiology</td>
+                        <td>8:50 AM</td>
+                        <td>2h</td>
+                        <td>Block A</td>
+                        <td>
+                          <a href="#">
+                            <i class="material-icons">
+                              create
+                            </i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1st</td>
+                        <td>BIO12344</td>
+                        <td>Microbiology</td>
+                        <td>8:50 AM</td>
+                        <td>2h</td>
+                        <td>Block A</td>
+                        <td>
+                          <a href="#">
+                            <i class="material-icons">
+                              create
+                            </i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1st</td>
+                        <td>BIO12344</td>
+                        <td>Microbiology</td>
+                        <td>8:50 AM</td>
+                        <td>2h</td>
+                        <td>Block A</td>
+                        <td>
+                          <a href="#">
+                            <i class="material-icons">
+                              create
+                            </i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1st</td>
+                        <td>BIO12344</td>
+                        <td>Microbiology</td>
+                        <td>8:50 AM</td>
+                        <td>2h</td>
+                        <td>Block A</td>
+                        <td>
+                          <a href="#">
+                            <i class="material-icons">
+                              create
+                            </i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1st</td>
+                        <td>BIO12344</td>
+                        <td>Microbiology</td>
+                        <td>8:50 AM</td>
+                        <td>2h</td>
+                        <td>Block A</td>
+                        <td>
+                          <a href="#">
+                            <i class="material-icons">
+                              create
+                            </i>
+                          </a>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div> <!-- end table-responsive-->
+
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-box">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2 pb-2 border-bottom">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="header-title mr-3">Recent Classes</h4>
+                      <div class="dropdown custom-dropdown mr-1">
+                        <a class="btn btn-light dropdown-toggle" href="#" id="attendanceReport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Semester 1 <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="attendanceReport" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                      <div class="dropdown custom-dropdown mr-1">
+                        <a class="btn btn-light dropdown-toggle" href="#" id="attendanceReport2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Electronics <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="attendanceReport2" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="dropdown custom-dropdown mr-1">
+                        <a class="btn btn-light dropdown-toggle" href="#" id="attendanceReport3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          This Week <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="attendanceReport3" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                      <a href="#"> Details </a>
+                    </div>
+                  </div>
+                  <div class="chart-area" style="height: 200px">
+                  <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
+                    <div style="height: 100%" class="d-flex align-items-center justify-content-center">
+                      <h1>Chart Area</h1>
+                    </div>
+                  <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card-box">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2 pb-2 border-bottom">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h4 class="header-title mr-3">All Classes Learning <span>(this semester)</span></h4>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="dropdown custom-dropdown mr-1">
+                        <a class="btn btn-light dropdown-toggle" href="#" id="semester" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Today <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="semester" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                      <a href="#"> Details </a>
+                    </div>
+                  </div>
+                  <div class="chart-area" style="height: 200px">
+<!--                    =========== Remove this <div> and parent height when you place the chart ==============-->
+                    <div style="height: 100%" class="d-flex align-items-center justify-content-center">
+                      <h1>Chart Area</h1>
+                    </div>
+<!--                    =========== Remove this <div> and parent height when you place the chart ==============-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- container -->
+        </div> <!-- content -->
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                2019 Dummy <a href="#">Polis</a>
+              </div>
+              <div class="col-md-6">
+                <div class="text-md-right footer-links d-none d-sm-block">
+                  <a href="#">About Us</a>
+                  <a href="#">Help</a>
+                  <a href="#">Contact Us</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </footer>
+        <!-- end Footer -->
       </div>
-    </footer>
-    <!-- end Footer -->
+      <!-- ============================================================== -->
+      <!-- End Page content -->
+      <!-- ============================================================== -->
+    </div>
 
-  </div>
+    <!-- END wrapper -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js" integrity="sha256-Y8l+EeoUOvr8SqEj/gTyjBb8CqhtrA6GU9P4yB+41cE=" crossorigin="anonymous"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-  <!-- ============================================================== -->
-  <!-- End Page content -->
-  <!-- ============================================================== -->
+    <!-- Vendor js -->
+    <script src="../javascript/jquer.js"></script>
+    <!-- App js-->
+    <script src="../javascript/javascript.js"></script>
 
-
-</div>
-<!-- END wrapper -->
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js" integrity="sha256-Y8l+EeoUOvr8SqEj/gTyjBb8CqhtrA6GU9P4yB+41cE=" crossorigin="anonymous"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-
-<!-- Vendor js -->
-<script src="../javascript/jquer.js"></script>
-
-<!-- App js-->
-<script src="../javascript/javascript.js"></script>
-
-</body>
-
+  </body>
 </html>
