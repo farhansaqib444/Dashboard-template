@@ -52,12 +52,24 @@
   flex-wrap: wrap;
   margin-bottom: 25px;
   background-color: #F8EDF8; }
-  .category-bar .form-group select.form-control {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #000000;
-    border-radius: 7px;
-    padding: 2px 5px;
-    height: 35px; }
+
+.form-group.mini-select select.form-control {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+  font-size: 19px;
+  border-radius: 7px;
+  padding: 2px 5px;
+  height: 35px; }
+
+.separation-bar span {
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.3px;
+  color: #707070;
+  padding: 0 15px; }
+  .separation-bar span b {
+    margin-left: 2px;
+    color: #000; }
 
 .dropdown.custom-dropdown {
   position: relative; }
@@ -101,7 +113,7 @@
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 0;
+  border-radius: 0 !important;
   -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -129,14 +141,23 @@
 
 .page-item:first-child .page-link {
   margin-left: 0;
-  border-top-left-radius: .25rem;
-  border-bottom-left-radius: .25rem; }
+  border-radius: 0; }
+
+.page-item:last-child .page-link {
+  margin-left: 0;
+  border-radius: 0; }
 
 .page-item.active .page-link {
   z-index: 1;
   color: #6C6C6C;
   background-color: #E5E3E4;
-  border-color: #E5E3E4; }
+  border-color: #000000; }
+
+.page-link {
+  padding: 7px 11px;
+  border: 1px solid #000000; }
+  .page-link:hover {
+    border-color: #000000; }
 
 .btn {
   padding: 5px 10px;
@@ -149,7 +170,7 @@
   border-color: #69144D; }
 
 .card-box {
-  padding: 13px 20px;
+  padding: 20px 20px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0 0 10px #00000029;
   margin-bottom: 24px;
@@ -169,6 +190,8 @@
   text-align: center;
   border-bottom: 0;
   color: #000; }
+.detail-table thead th:first-child {
+  text-align: left; }
 .detail-table tr:first-child td, .detail-table tr:first-child th {
   border-top: 0; }
 .detail-table .table td, .detail-table .table th {
@@ -176,6 +199,8 @@
   font-size: 12px; }
 .detail-table tbody tr td {
   text-align: center; }
+.detail-table tbody tr td:first-child {
+  text-align: left; }
 .detail-table tbody tr td i {
   font-size: 15px; }
 

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Edit class</title>
+  <title>Attendance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- App favicon -->
@@ -206,216 +206,101 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mb-4">
-            <h1 class="top-heading">Edit class <a class="ml-3" href="#">Delete</a></h1>
+            <h1 class="top-heading"> Attendance </h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-8">
-            <form action="" class="mb-4">
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group mb-3">
-                    <label>Semester</label>
-                    <select class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group mb-3">
-                    <label>Subject Code</label>
-                    <select class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group mb-3">
-                    <label>Subject Name</label>
-                    <select class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group mb-3">
-                    <label>Class Type</label>
-                    <select class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group mb-3">
-                    <label>When</label>
-                    <select class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group mb-3">
-                    <label>Start Time</label>
-                    <input type="text" class="form-control" placeholder="start time">
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group mb-3">
-                    <label>End Time</label>
-                    <input type="text" class="form-control" placeholder="End time">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group mb-3">
-                    <label>Semester End Date</label>
-                    <input type="date" class="form-control">
-                  </div>
-                </div>
-              </div>
-              <button type="button" class="btn btn-secondary waves-effect px-4">Save</button>
-            </form>
+        <div class="category-bar">
+          <div class="form-group mini-select mb-md-0 mb-2 mr-2">
+            <select class="form-control">
+              <option>Semester 1</option>
+              <option>Semester 2</option>
+              <option>Semester 3</option>
+              <option>Semester 4</option>
+            </select>
           </div>
-          <div class="col-lg-4">
-            <div class="form-group">
-              <label> Where </label>
+          <div class="form-group mini-select mb-md-0 mb-2">
+            <select class="form-control">
+              <option>Electronics 1</option>
+              <option>Electronics 2</option>
+              <option>Electronics 3</option>
+              <option>Electronics 4</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card-box">
+              <div class="d-flex justify-content-between align-items-center flex-wrap mb-2 pb-2 border-bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="header-title mr-3">Daily Attendance Report</h4>
+                </div>
+              </div>
+              <div class="chart-area" style="height: 300px">
+                <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
+                <div style="height: 100%" class="d-flex align-items-center justify-content-center">
+                  <h1>Chart Area</h1>
+                </div>
+                <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
+              </div>
             </div>
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54441.582671810414!2d74.2998016!3d31.480217599999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1580989615273!5m2!1sen!2s" width="100%" height="230" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-              <div class="map-dropdown my-2">
-                <label class="mr-2">Radius (m):</label>
-                <div class="form-group mb-3">
-                  <select class="form-control" id="example-select">
-                    <option>100</option>
-                    <option>200</option>
-                    <option>300</option>
-                    <option>400</option>
-                    <option>500</option>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-box">
+              <div class="d-flex justify-content-between align-items-center flex-wrap mb-2 pb-2 border-bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="header-title mr-3">All Classes Learning <span>(this semester)</span></h4>
+                </div>
+              </div>
+              <div class="chart-area" style="height: 300px">
+                <!--                    =========== Remove this <div> and parent height when you place the chart ==============-->
+                <div style="height: 100%" class="d-flex align-items-center justify-content-center">
+                  <h1>Chart Area</h1>
+                </div>
+                <!--                    =========== Remove this <div> and parent height when you place the chart ==============-->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="card-box">
+              <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <h4 class="header-title mr-3">List Of Students</h4>
+                <div class="form-group mini-select mb-md-0 mb-2 mr-2">
+                  <select class="form-control">
+                    <option>Export</option>
+                    <option>Export</option>
+                    <option>Export</option>
                   </select>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="card-box">
-              <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <div class="">
-                  <h4 class="header-title mr-3">List Of Students</h4>
-                  <div class="form-group mt-2">
-                    <input type="text" placeholder="Search by Name" class="form-control mini">
-                  </div>
-                </div>
+              <div class="form-group mt-2">
+                <input type="text" placeholder="Search by Name" class="form-control mini col-3">
               </div>
               <div class="table-responsive">
                 <table class="table table-sm detail-table mb-0">
                   <thead>
                   <tr>
-                    <th>Student ID</th>
+
                     <th>Student Name</th>
-                    <th>Semester</th>
-                    <th>Gender</th>
-                    <th>Institution</th>
+                    <th>Check In</th>
+                    <th>Check Out</th>
+                    <th>Duration</th>
+                    <th>Status</th>
+                    <th>Overall</th>
+                    <th></th>
                   </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>23424234</td>
                       <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
-                    </tr>
-                    <tr>
-                      <td>23424234</td>
-                      <td>Paul Pogba</td>
-                      <td>1st</td>
-                      <td>Male</td>
-                      <td>The University of Malbourne</td>
+                      <td>7:50 AM</td>
+                      <td>8:50 AM</td>
+                      <td>1 h</td>
+                      <td>Present</td>
+                      <td>80%</td>
+                      <td>
+                        <a href="">Update</a>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -423,14 +308,37 @@
               <div class="d-flex justify-content-end py-2">
                 <nav>
                   <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="javascript: void(0);">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="javascript: void(0);">2</a></li>
+                    <li class="page-item"><a class="page-link" href="">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="">2</a></li>
                   </ul>
                 </nav>
               </div>
             </div>
           </div>
+          <div class="col-lg-4">
+            <div class="pai-chart">
+              <div class="card-box">
+                  <div class="d-flex justify-content-between">
+                    <label class="font-weight-bold text-dark">Learning</label>
+                    <div>
+                      <div class="separation-bar">
+                        <span> Total Check In: <b> 20 </b></span>
+                        <span> Total Student: <b> 35 </b></span>
+                      </div>
+                    </div>
+                  </div>
+                <div class="chart-area" style="height: 300px">
+                  <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
+                  <div style="height: 100%" class="d-flex align-items-center justify-content-center">
+                    <h1>Chart Area</h1>
+                  </div>
+                  <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div> <!-- container -->
     </div> <!-- content -->
     <!-- Footer Start -->
