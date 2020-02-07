@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Attendance</title>
+  <title>Feedback</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- App favicon -->
@@ -206,7 +206,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mb-4">
-            <h1 class="top-heading"> Attendance </h1>
+            <h1 class="top-heading"> Feedback </h1>
           </div>
         </div>
         <div class="category-bar">
@@ -230,18 +230,24 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <div class="card-box">
-              <div class="d-flex justify-content-between align-items-center flex-wrap mb-2 pb-2 border-bottom">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h4 class="header-title mr-3">Weekly Attendance Report</h4>
+            <div class="pai-chart">
+              <div class="card-box">
+                <div class="d-flex justify-content-between">
+                  <label class="font-weight-bold text-dark">Learning</label>
+                  <div>
+                    <div class="separation-bar">
+                      <span> Total Check In: <b> 20 </b></span>
+                      <span> Total Student: <b> 35 </b></span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="chart-area" style="height: 300px">
-                <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
-                <div style="height: 100%" class="d-flex align-items-center justify-content-center">
-                  <h1>Chart Area</h1>
+                <div class="chart-area" style="height: 300px">
+                  <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
+                  <div style="height: 100%" class="d-flex align-items-center justify-content-center">
+                    <h1>Chart Area</h1>
+                  </div>
+                  <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
                 </div>
-                <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
               </div>
             </div>
           </div>
@@ -259,84 +265,6 @@
                   <h1>Chart Area</h1>
                 </div>
                 <!--                    =========== Remove this <div> and parent height when you place the chart ==============-->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-12">
-            <div class="card-box">
-              <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <h4 class="header-title mr-3">List Of Students</h4>
-                <div class="form-group mini-select mb-md-0 mb-2 mr-2">
-                  <select class="form-control">
-                    <option>Export</option>
-                    <option>Export</option>
-                    <option>Export</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group mt-2">
-                <input type="text" placeholder="Search by Name" class="form-control mini col-3">
-              </div>
-              <div class="table-responsive">
-                <table class="table table-sm detail-table mb-0">
-                  <thead>
-                  <tr>
-
-                    <th>Student Name</th>
-                    <th>Check In</th>
-                    <th>Check Out</th>
-                    <th>Duration</th>
-                    <th>Status</th>
-                    <th>Overall</th>
-                    <th></th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Paul Pogba</td>
-                      <td>7:50 AM</td>
-                      <td>8:50 AM</td>
-                      <td>1 h</td>
-                      <td>Present</td>
-                      <td>80%</td>
-                      <td>
-                        <a href="">Update</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div> <!-- end table-responsive-->
-              <div class="d-flex justify-content-end py-2">
-                <nav>
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="">2</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="pai-chart">
-              <div class="card-box">
-                  <div class="d-flex justify-content-between">
-                    <label class="font-weight-bold text-dark">Learning</label>
-                    <div>
-                      <div class="separation-bar">
-                        <span> Total Check In: <b> 20 </b></span>
-                        <span> Total Student: <b> 35 </b></span>
-                      </div>
-                    </div>
-                  </div>
-                <div class="chart-area" style="height: 300px">
-                  <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
-                  <div style="height: 100%" class="d-flex align-items-center justify-content-center">
-                    <h1>Chart Area</h1>
-                  </div>
-                  <!-- =========== Remove this <div> and parent height when you place the chart ==============-->
-                </div>
               </div>
             </div>
           </div>
