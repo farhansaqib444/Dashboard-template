@@ -71,6 +71,33 @@
     margin-left: 2px;
     color: #000; }
 
+.week-attendance-btn span.pre-btn {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-color: #00A136;
+  color: #fff;
+  margin-right: 1px; }
+  .week-attendance-btn span.pre-btn:after {
+    content: "P";
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    display: inline-block;
+    vertical-align: top; }
+.week-attendance-btn span.abs-btn {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-color: #AF0032;
+  color: #fff;
+  margin-right: 1px; }
+  .week-attendance-btn span.abs-btn:after {
+    content: "A";
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    display: inline-block;
+    vertical-align: top; }
+
 .dropdown.custom-dropdown {
   position: relative; }
   .dropdown.custom-dropdown a {
