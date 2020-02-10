@@ -1,3 +1,6 @@
+.text-dark {
+  color: #0A0A0A !important; }
+
 .total-card {
   background: #666E80 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 8px #3E649229;
@@ -305,6 +308,16 @@
     top: 0;
     left: 0;
     opacity: 0; }
+
+.user-profile-card {
+  list-style: none;
+  padding: 0; }
+  .user-profile-card label {
+    color: #0A0A0A;
+    font-weight: bold;
+    min-width: 80px;
+    max-width: 100px;
+    width: 100%; }
 
 @media only screen and (max-width: 768px) {
   .total-card {
