@@ -1,6 +1,23 @@
 .text-dark {
   color: #0A0A0A !important;
 }
+.status-circle {
+  display: inline-block;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 24px;
+  color: #fff;
+}
+.bg-success {
+  background: #7B7B7B 0% 0% no-repeat padding-box;
+}
+.bg-gray {
+  background-color: #F8EDF8;
+}
+.bg-dark {
+  background: #7D0A55 0% 0% no-repeat padding-box;
+}
 .total-card {
   background: #666E80 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 8px #3E649229;
@@ -30,9 +47,7 @@
     width: 24px;
   }
 }
-.bg-gray {
-  background-color: #F8EDF8;
-}
+
 .content {
   padding: 40px 0;
   .top-heading {
@@ -241,7 +256,7 @@
   padding: 20px 20px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0 0 10px #00000029;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   border-radius: 0;
 }
 .header-title {
@@ -284,7 +299,7 @@
     }
     td {
       i {
-        font-size: 15px;
+        font-size: 13px;
       }
     }
   }

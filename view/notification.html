@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Notification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- App favicon -->
+  <!-- App css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style/bootstrap.min.css">
+  <link rel="stylesheet" href="../style/icons.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link href="../style/theme-style.css" rel="stylesheet" type="text/css" />
+  <link href="../style/custom-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!-- Begin page -->
+<div id="wrapper">
+  <!-- Topbar Start -->
+  <div class="navbar-custom">
+    <ul class="list-unstyled topnav-menu float-right mb-0">
+      <li class="dropdown notification-list">
+        <a href="#" class="nav-link dropdown-toggle right-bar-toggle waves-effect waves-light" data-toggle="dropdown">
+          <i class="material-icons align-middle" style="width: 35px; color:#292D39;">
+            notification_important
+          </i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+          <!-- item-->
+          <div class="dropdown-header noti-title">
+            <h6 class="text-overflow m-0">Notification !</h6>
+          </div>
+
+          <!-- item-->
+          <a href="#" class="dropdown-item notify-item">
+            <span>Recover your password</span>
+
+          </a>
+          <!-- item-->
+          <a href="#" class="dropdown-item notify-item">
+            <span>Change your password</span>
+          </a>
+        </div>
+
+        <span class="info-bell-icon">4</span>
+      </li>
+      <li class="dropdown notification-list">
+        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+          <img src="../images/nav-user.png" alt="user-image" class="rounded-circle">
+          <span class="pro-user-name ml-1">
+                 <!-- Turkish Gypsy Girl-->
+              </span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+          <!-- item-->
+          <div class="dropdown-header noti-title">
+            <h6 class="text-overflow m-0">Welcome !</h6>
+          </div>
+
+          <!-- item-->
+          <a href="#" class="dropdown-item notify-item">
+            <i class="fe-user"></i>
+            <span>My Account</span>
+          </a>
+
+
+          <!-- item-->
+          <a href="#" class="dropdown-item notify-item">
+            <i class="fe-lock"></i>
+            <span>Lock Screen</span>
+          </a>
+
+          <div class="dropdown-divider"></div>
+
+          <!-- item-->
+          <a href="#" class="dropdown-item notify-item">
+            <i class="fe-log-out"></i>
+            <span>Logout</span>
+          </a>
+
+        </div>
+      </li>
+    </ul>
+    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+      <li>
+        <button class="button-menu-mobile waves-effect waves-light">
+          <i class="fe-menu"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- end Topbar -->
+
+  <!-- ========== Left Sidebar Start ========== -->
+  <div class="left-side-menu">
+    <div class="slimscroll-menu">
+      <!--- Sidemenu -->
+      <div id="sidebar-menu">
+        <ul class="metismenu" id="side-menu">
+          <li>
+            <!-- LOGO -->
+            <div class="logo-box">
+              <a href="#" class="logo text-center">
+                  <span class="logo-lg">
+                      <img src="../images/theme-logo.png" alt="" >
+                  </span>
+                <span class="logo-sm">
+                      <img src="../images/theme-logo.png" alt="">
+                  </span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="home%202.html">
+              <i class="material-icons">
+                dashboard
+              </i>
+              <span class="badge badge-success badge-pill float-right">4</span>
+              <span> Home </span>
+            </a>
+          </li>
+          <li>
+            <a href="classes.html">
+              <i class="material-icons">
+                calendar_today
+              </i>
+              <span> Classes </span>
+            </a>
+          </li>
+          <li>
+            <a href="edit-class.html">
+              <i class="material-icons">
+                person
+              </i>
+              <span> Edit Class </span>
+            </a>
+          </li>
+          <li>
+            <a href="students.html">
+              <i class="material-icons">
+                person
+              </i>
+              <span> Students </span>
+            </a>
+          </li>
+          <li>
+            <a href="attendance.html">
+              <i class="material-icons">
+                how_to_reg
+              </i>
+              <span> Attendance </span>
+            </a>
+          </li>
+          <li>
+            <a href="feedback.html">
+              <i class="material-icons">
+                highlight
+              </i>
+              <span> Feedback </span>
+            </a>
+          </li>
+          <li>
+            <a href="notification.html">
+              <i class="material-icons">
+                notification_important
+              </i>
+              <span> Notifications </span>
+            </a>
+          </li>
+          <li>
+            <a href="setting.html">
+              <i class="material-icons">
+                perm_data_setting
+              </i>
+              <span> Setting </span>
+            </a>
+          </li>
+        </ul>
+        <!--            Menu Icon -->
+        <ul class="menu-icon">
+          <li>
+            <button class="button-menu-mobile waves-effect waves-light">
+              <i class="material-icons">
+                menu
+              </i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <div class="clearfix"></div>
+    </div>
+    <!-- Sidebar -left -->
+  </div>
+  <!-- ========== Left Sidebar End ========== -->
+
+  <!-- ============================================================== -->
+  <!-- Start Page Content here -->
+  <!-- ============================================================== -->
+  <div class="content-page">
+    <!-- content -->
+    <div class="content">
+      <!-- Start Content-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="top-heading"> Notification </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-12">
+            <div class="card-box">
+              <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                  <h4 class="header-title mr-3">CheckIn and CheckOut</h4>
+                  <div class="dropdown custom-dropdown mr-2">
+                    <a class="btn btn-light dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Recent <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <div class="dropdown custom-dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Subject <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#"> <u>View all</u> </a>
+              </div>
+              <hr class="border-bottom">
+              <div class="form-group mt-2">
+                <input type="text" placeholder="Search by Name" class="form-control mini col-3">
+              </div>
+              <div class="table-responsive">
+                <table class="table table-sm detail-table mb-0">
+                  <thead>
+                  <tr>
+                    <th>Student Name</th>
+                    <th>Sem</th>
+                    <th>Subj. Code</th>
+                    <th>Subj. Name</th>
+                    <th>CheckIn</th>
+                    <th>CheckOut</th>
+                    <th>Duration</th>
+                    <th>Location</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                    <td>David Beckham</td>
+                    <td>1st</td>
+                    <td>BIO12344</td>
+                    <td>Microbiology</td>
+                    <td>8:50 AM</td>
+                    <td>8:50 PM</td>
+                    <td>12h</td>
+                    <td>Block A</td>
+                    <td>
+                      <a href="#"> <u> Details</u> </a>
+                    </td>
+                    <td></td>
+                  </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>8:50 PM</td>
+                      <td>12h</td>
+                      <td>Block A</td>
+                      <td>
+                        <a href="#"> <u> Details</u> </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>8:50 PM</td>
+                      <td>12h</td>
+                      <td>Block A</td>
+                      <td>
+                        <a href="#"> <u> Details</u> </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>8:50 PM</td>
+                      <td>12h</td>
+                      <td>Block A</td>
+                      <td>
+                        <a href="#"> <u> Details</u> </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>8:50 PM</td>
+                      <td>12h</td>
+                      <td>Block A</td>
+                      <td>
+                        <a href="#"> <u> Details</u> </a>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end table-responsive-->
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="card-box">
+              <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                  <h4 class="header-title mr-3">Comment/Feedback</h4>
+                  <div class="dropdown custom-dropdown mr-2">
+                    <a class="btn btn-light dropdown-toggle" href="#" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Recent <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <div class="dropdown custom-dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" id="dropdownMenuLink21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Subject <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink21" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#"> <u>View all</u> </a>
+              </div>
+              <hr class="border-bottom">
+              <div class="form-group mt-2">
+                <input type="text" placeholder="Search by Name" class="form-control mini col-3">
+              </div>
+              <div class="table-responsive">
+                <table class="table table-sm detail-table mb-0">
+                  <thead>
+                  <tr>
+                    <th>Sem/Class</th>
+                    <th>Subject</th>
+                    <th class="text-left">Comment</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><b class="text-dark">1st</b></td>
+                    <td>Microbiology</td>
+                    <td class="text-left">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium voluptatum deleniti atque corrupti
+                      quos dolores et quas molestias excepturi sint
+                      occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b class="text-dark">1st</b></td>
+                    <td>Microbiology</td>
+                    <td class="text-left">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium voluptatum deleniti atque corrupti
+                      quos dolores et quas molestias excepturi sint
+                      occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b class="text-dark">1st</b></td>
+                    <td>Microbiology</td>
+                    <td class="text-left">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium voluptatum deleniti atque corrupti
+                      quos dolores et quas molestias excepturi sint
+                      occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b class="text-dark">1st</b></td>
+                    <td>Microbiology</td>
+                    <td class="text-left">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium voluptatum deleniti atque corrupti
+                      quos dolores et quas molestias excepturi sint
+                      occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end table-responsive-->
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <div class="card-box">
+              <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                  <h4 class="header-title mr-3">Missing Classes</h4>
+                </div>
+                <a href="#"> <u>View all</u> </a>
+              </div>
+              <div class="form-group mt-2">
+                <input type="text" placeholder="Search by Name" class="form-control mini col-3">
+              </div>
+              <div class="table-responsive">
+                <table class="table table-sm detail-table mb-0">
+                  <thead>
+                  <tr>
+                    <th>Informed By</th>
+                    <th>Sem</th>
+                    <th>Subj. Code</th>
+                    <th>Subj. Name</th>
+                    <th>Start Time</th>
+                    <th>Informing day</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>Today</td>
+                      <td>
+                      <a href="#">
+                        <span class="status-circle bg-dark">
+                          <i class="material-icons ">
+                          add
+                          </i>
+                        </span>
+                      </a>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>Today</td>
+                      <td>
+                        <a href="#">
+                        <span class="status-circle bg-dark">
+                          <i class="material-icons ">
+                          add
+                          </i>
+                        </span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>Today</td>
+                      <td>
+                        <a href="#">
+                        <span class="status-circle bg-dark">
+                          <i class="material-icons ">
+                          add
+                          </i>
+                        </span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>Today</td>
+                      <td>
+                        <a href="#">
+                        <span class="status-circle bg-success">
+                          <i class="material-icons ">
+                            check
+                          </i>
+                        </span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>Today</td>
+                      <td>
+                        <a href="#">
+                        <span class="status-circle bg-success">
+                          <i class="material-icons ">
+                            check
+                          </i>
+                        </span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>Today</td>
+                      <td>
+                        <a href="#">
+                        <span class="status-circle bg-success">
+                          <i class="material-icons ">
+                            check
+                          </i>
+                        </span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>David Beckham</td>
+                      <td>1st</td>
+                      <td>BIO12344</td>
+                      <td>Microbiology</td>
+                      <td>8:50 AM</td>
+                      <td>Today</td>
+                      <td>
+                        <a href="#">
+                        <span class="status-circle bg-success">
+                          <i class="material-icons ">
+                            check
+                          </i>
+                        </span>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> <!-- end table-responsive-->
+            </div>
+          </div>
+        </div>
+      </div> <!-- container -->
+    </div>
+    <!-- content -->
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            2019 Dummy <a href="#">Polis</a>
+          </div>
+          <div class="col-md-6">
+            <div class="text-md-right footer-links d-none d-sm-block">
+              <a href="#">About Us</a>
+              <a href="#">Help</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Page content -->
+  <!-- ============================================================== -->
+</div>
+
+<!-- END wrapper -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<!-- Vendor js -->
+<script src="../javascript/jquer.js"></script>
+<!-- App js-->
+<script src="../javascript/javascript.js"></script>
+
+</body>
+</html>
