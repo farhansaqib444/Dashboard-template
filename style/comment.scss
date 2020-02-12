@@ -1,0 +1,92 @@
+.nav-tabs {
+  border-bottom: 0;
+}
+.nav-tabs .nav-item {
+  margin: 0 15px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.nav-tabs .nav-link {
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0;
+  color: #7B7B7B;
+
+  border: 1px solid transparent;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000029;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  box-shadow: none;
+  outline: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  background: #DBDBDB 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000029;
+  border-color: #dee2e6 #dee2e6 #dee2e6;
+}
+
+
+.tab-content {
+  .nav-tabs .nav-item {
+    margin: initial;
+  }
+  .nav-tabs .nav-link {
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #7B7B7B;
+
+    border: 1px solid #B0AFB0;
+    background: #DBDBDB 0% 0% no-repeat padding-box;
+    box-shadow: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom: 0;
+    span {
+      display: flex;
+    }
+  }
+  .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    box-shadow: none;
+    outline: none;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background: #DBDBDB 0% 0% no-repeat padding-box;
+    box-shadow: none;
+    border: 1px solid #B0AFB0;
+    border-bottom: 0;
+  }
+   .tab-pane  > .tab-content {
+    border: 1px solid #B0AFB0;
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+     padding-top: 5px;
+  }
+  .table {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #00000029;
+    thead {
+      border-bottom: 1px solid #D1D1D1;
+    }
+    tr td {
+      border-top: 1px solid #D1D1D1;
+    }
+    tr th, tr td {
+      text-align: left;
+      padding-left: 25px;
+      padding-right: 25px;
+      a {
+        font-weight: 400;
+      }
+    }
+    tr td:first-child {
+      font-weight: bold;
+    }
+  }
+}
